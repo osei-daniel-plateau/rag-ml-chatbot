@@ -1,0 +1,30 @@
+Source: Wikipedia - Artificial neural network (https://en.wikipedia.org/wiki/Artificial_neural_network), adapted under CC BY-SA 4.0
+
+# Artificial Neural Networks: A Study Guide
+
+## Definition and Biological Inspiration
+
+Artificial neural networks represent a computational approach modeled after how biological brains process information. A neural network (NN), or neural net, is a computational model inspired by the structure and functions of biological neural networks. Rather than following traditional computer architecture with explicit instructions and separate memory, neural networks employ a connectionist approach where processing and memory are integrated throughout the network structure.
+
+## Network Structure: Neurons and Layers
+
+The fundamental building block of any neural network is the artificial neuron, which mimics basic properties of biological neurons. Each neuron receives numerical inputs from connected neurons, processes this information, and produces a single numerical output. The network weights these incoming signals according to connection strengths, adds a bias term, and passes the result through a nonlinear activation function to generate the final output.
+
+Neurons organize into layers arranged hierarchically. The input layer receives raw data (such as pixel values in an image), while the output layer produces final predictions or classifications. Between these sit hidden layers that perform intermediate processing. As information flows through successive hidden layers, the network gradually transforms raw input into meaningful representations -- pixels become edges, edges become shapes, and shapes become recognizable objects.
+
+Most traditional networks operate as feedforward systems where information flows unidirectionally from input through hidden layers to output. However, recurrent networks allow connections that loop back, enabling them to process sequential data and maintain temporal context. The specific arrangement of neurons and their connections defines the network's architecture and significantly influences its capabilities.
+
+## The Training Process: Backpropagation
+
+Neural networks must be trained before deployment by adjusting connection weights to minimize prediction errors. This training process relies on vast quantities of example data -- far more than biological brains require to achieve comparable performance.
+
+The primary training mechanism is backpropagation, an algorithm that efficiently propagates error information backward through the network. The process begins with comparing the network's predictions against known correct answers, measuring the difference using a loss function. Rather than adjusting weights randomly, backpropagation calculates how changes to each weight would affect the total error, working backward from output neurons to input neurons.
+
+This calculation leverages the chain rule of calculus to determine the gradient -- essentially the slope of the error landscape -- with respect to each weight. The network then adjusts weights in the direction that reduces error, using a parameter called the learning rate to control adjustment magnitude. A higher learning rate speeds training but risks instability, while a lower rate proceeds more cautiously but requires more iterations.
+
+Training typically employs stochastic gradient descent, updating weights based on small batches of training examples rather than the entire dataset at once. This approach introduces beneficial noise that helps the network escape suboptimal local solutions. Training continues until performance plateaus, indicating the network has learned generalizable patterns rather than simply memorizing training data.
+
+## Key Principles
+
+Neural networks succeed because they can model nonlinear relationships through layered hierarchical representations. However, their effectiveness depends critically on training data quality, network architecture choices, and careful hyperparameter tuning. The "black box" nature of deep networks -- difficulty understanding their decision logic -- remains an active research challenge alongside concerns about bias and adversarial vulnerabilities.
+
