@@ -1,0 +1,30 @@
+Source: Wikipedia - Convolutional neural network (https://en.wikipedia.org/wiki/Convolutional_neural_network), adapted under CC BY-SA 4.0
+
+# Convolutional Neural Networks: A Study Guide
+
+## Definition and Core Concept
+
+A convolutional neural network (CNN) is a specialized type of deep learning model designed to process data with spatial structure, particularly images. Unlike traditional fully-connected neural networks that treat all input features equally, CNNs exploit the spatial relationships inherent in visual data. The network learns to automatically discover the representations needed for detection or classification through a process called filter optimization, where learnable parameters called kernels identify important patterns at different locations in the input.
+
+## Architecture and Key Components
+
+CNNs consist of several distinct layer types working together. The convolutional layer serves as the foundation, applying small filters across the input to detect features like edges, textures, and shapes. As these filters slide across the image, they compute dot products that generate activation maps -- spatial representations showing where specific features appear.
+
+Pooling layers follow convolution layers to reduce computational complexity while preserving essential information. Max pooling uses the maximum value of each local cluster of neurons in the feature map, while average pooling takes the mean. Both approaches downsample feature maps, typically using 2x2 windows, which helps the network become more robust to small variations in feature position. After several convolution-pooling pairs, fully connected layers perform the final classification, connecting every neuron to every neuron in the subsequent layer.
+
+## How Convolution and Pooling Work
+
+Convolution operates through a mathematical process where small filter windows move systematically across the input. Each position generates an output value representing how well that location matches the filter pattern. By using shared weights across the entire image, CNNs dramatically reduce the number of parameters compared to fully-connected networks. For example, processing a 100x100 pixel image with fully-connected layers would require 10,000 weights per neuron, whereas a convolutional layer using 5x5 filters needs only 25 weights.
+
+Pooling layers aggregate information from small regions into single values, progressively reducing spatial dimensions while maintaining important features. This downsampling serves multiple purposes: it decreases memory requirements, reduces computation, and helps the network learn more robust representations that remain relatively stable when features shift slightly in position.
+
+## Biological Inspiration and Design Advantages
+
+CNN architecture draws inspiration from biological vision systems. Research by Hubel and Wiesel demonstrated that neurons in the visual cortex respond only to stimuli within restricted regions called receptive fields. CNNs mimic this principle by constraining each neuron to receive input from a small neighborhood rather than the entire input, making them computationally efficient and better suited to learning spatial patterns.
+
+## Common Applications
+
+CNNs have become the standard approach for numerous vision tasks. They excel at image classification, where they categorize photos into predefined categories, and object detection, locating and identifying multiple objects within images. Medical imaging represents another critical application -- CNNs analyze X-rays, MRIs, and mammograms to identify abnormalities. Video analysis combines spatial and temporal convolutions to understand action sequences. Beyond vision, CNNs have proven effective for natural language processing, time series analysis, and drug discovery, demonstrating their versatility beyond their original image-processing domain.
+
+The success of CNNs in large-scale competitions like ImageNet showcases their practical power, achieving superhuman performance on numerous benchmarks and enabling real-world applications from autonomous vehicles to medical diagnosis systems.
+
