@@ -1,0 +1,34 @@
+Source: Wikipedia - Supervised learning (https://en.wikipedia.org/wiki/Supervised_learning), adapted under CC BY-SA 4.0
+
+# Supervised Learning: A Comprehensive Study Guide
+
+## Definition and Core Concept
+
+Supervised learning represents a fundamental machine learning approach where algorithms learn to predict outputs by studying labeled examples. In this paradigm, each training instance includes both input features and the correct corresponding answer. The term "supervised" refers to the role of a teacher or supervisor who provides this training data, guiding the algorithm towards correct predictions. A practical illustration: training a model to recognize cats involves providing numerous image-label pairs where images are marked as "cat" or "not cat."
+
+The ultimate objective is straightforward: the trained model should accurately predict the output for new, unseen data. This generalization capability distinguishes successful supervised learning from mere memorization, enabling models to work effectively on data encountered after training.
+
+## How Supervised Learning Works
+
+Implementing supervised learning requires a systematic, multi-step process. First, practitioners determine what type of training samples to collect, considering whether they need individual elements or complete sequences. Next, they gather representative training data from experts or measurements. The third step involves selecting and engineering input features -- transforming raw data into feature vectors that capture relevant information without becoming excessively high-dimensional.
+
+Following feature selection, engineers choose an appropriate algorithm and learning approach, such as support vector machines or decision trees. The algorithm is then trained using the gathered data, with hyperparameters optimized through validation sets or cross-validation techniques. Finally, performance evaluation occurs on a completely separate test set, ensuring honest assessment of generalization ability.
+
+## Key Challenges in Supervised Learning
+
+Four major issues shape supervised learning practice. The first involves balancing bias and variance -- models with high flexibility fit training data well but may perform poorly on new data, while inflexible models may underfit. Second, the relationship between training data quantity and function complexity matters significantly; simple functions need less data, while complex functions demand more examples plus flexible algorithms.
+
+Third, high-dimensional input spaces create difficulties even when only a few features matter, as extra dimensions increase variance. Dimensionality reduction and feature selection techniques help address this problem. Fourth, noisy labels corrupt training signals, potentially causing overfitting where models memorize training examples rather than learning generalizable patterns.
+
+## Common Algorithms and Approaches
+
+Supervised learning encompasses diverse methods. Linear approaches include linear regression, logistic regression, and support vector machines. Tree-based methods include decision trees and random forests. Distance-based approaches include nearest neighbor algorithms. Neural networks and Gaussian processes offer additional flexibility for complex relationships. The choice depends on data characteristics -- whether features are heterogeneous, redundant, or involve complex interactions.
+
+Two fundamental approaches guide algorithm selection: empirical risk minimization seeks functions fitting training data perfectly, while structural risk minimization incorporates complexity penalties to prevent overfitting. When using conditional probability models with negative log-likelihood loss, empirical risk minimization becomes equivalent to maximum likelihood estimation.
+
+## Real-World Applications
+
+Supervised learning powers numerous practical systems: handwriting and optical character recognition systems identify written text, spam detection classifiers protect email inboxes, speech recognition converts audio to text, and computer vision applications recognize objects in images. Additional applications span bioinformatics, database marketing, information retrieval, and satellite imagery analysis for landform classification.
+
+Success across these diverse domains reflects supervised learning's versatility -- when labeled data exists and clear input-output relationships can be learned, supervised approaches deliver powerful, deployable solutions.
+
