@@ -1,0 +1,32 @@
+Source: Wikipedia - Retrieval-augmented generation (https://en.wikipedia.org/wiki/Retrieval-augmented_generation), adapted under CC BY-SA 4.0
+
+# Retrieval-Augmented Generation (RAG): A Study Guide
+
+## Definition and Core Purpose
+
+Retrieval-augmented generation represents a significant advancement in how large language models operate. Rather than relying exclusively on information learned during initial training, RAG enables LLMs to pull relevant information from external sources before generating responses. This technique allows AI systems to incorporate current, domain-specific knowledge that may not exist in their training datasets. As a result, RAG-powered chatbots can access internal company databases or ground their answers in authoritative sources, making responses more current and contextually appropriate.
+
+## How RAG Integrates Retrieval with Language Models
+
+The RAG process follows a structured workflow. When a user submits a query, the system first activates a retriever component that searches through external data sources -- which may include databases, uploaded documents, or web content. These data sources are typically converted into mathematical representations called embeddings, which are numerical vectors stored in specialized vector databases. This conversion allows the retriever to identify and select documents most relevant to the user's question.
+
+Once relevant documents are identified, they become part of the prompt fed to the LLM. This augmented prompt -- containing both the original question and retrieved context -- guides the model's response generation. This approach works by blending the LLM process with a search or document look-up process to help LLMs stick to the facts. The language model then synthesizes an answer based on both the retrieved information and its internal training knowledge.
+
+## Why RAG Reduces Hallucination
+
+AI hallucinations occur when language models confidently generate false information, sometimes describing policies that don't exist or citing sources that were never real. RAG mitigates this problem by anchoring responses in verifiable sources. When an LLM must justify its answer by pointing to retrieved documents, it has less opportunity to fabricate information without contradiction.
+
+However, RAG doesn't eliminate hallucination entirely. Models can still misinterpret context from correctly sourced material, or extract a claim out of context and treat it as fact when it was not intended that way. This limitation demonstrates that source material alone cannot guarantee accuracy if the model misunderstands its meaning.
+
+## Operational Architecture and Key Components
+
+The typical RAG system comprises several interconnected layers. The retrieval layer converts source documents into embeddings and stores them in vector databases. When processing a query, a retriever component performs similarity searches to identify relevant documents. The system can employ various technical enhancements -- including dense and sparse vector representations, approximate nearest neighbor searches, and hybrid approaches -- to improve retrieval accuracy and efficiency.
+
+Data chunking represents another critical architectural consideration. Documents must be broken into appropriately-sized pieces before vectorization. Strategies include fixed-length chunks with overlapping sections, syntax-based divisions at sentence boundaries, or format-aware chunking that respects structural elements in code, HTML, or PDF files.
+
+## Additional Benefits and Limitations
+
+Beyond reducing hallucinations, RAG offers practical advantages. It eliminates the need for constant model retraining when new information becomes available, significantly reducing computational costs. Users can verify cited sources, providing transparency and accountability.
+
+However, RAG systems face inherent limitations. Models may struggle to recognize when they lack sufficient information to answer reliably. When encountering conflicting sources, RAG may incorrectly synthesize information from multiple documents, potentially merging outdated and current data in misleading ways. The technique improves accuracy substantially but represents an ongoing solution rather than a complete fix for language model limitations.
+
