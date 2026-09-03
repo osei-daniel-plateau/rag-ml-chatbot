@@ -1,0 +1,34 @@
+Source: Wikipedia - Deep learning (https://en.wikipedia.org/wiki/Deep_learning), adapted under CC BY-SA 4.0
+
+# Deep Learning: Definition, Architecture, and Applications
+
+## What is Deep Learning?
+
+Deep learning represents a specialized branch of machine learning that leverages multiple layers of artificial neural networks to tackle complex computational problems. It focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. Unlike traditional machine learning approaches that required manual feature engineering, deep learning systems automatically discover the patterns and features needed to solve problems by processing data through successive layers of abstraction.
+
+The fundamental innovation of deep learning is its hierarchical approach to data transformation. Rather than requiring human experts to identify and extract relevant features from raw data, the network learns which features matter at each level. For example, in image recognition, initial layers might detect simple elements like edges and corners, while intermediate layers recognize combinations of these features, and deeper layers identify complex objects like faces or animals.
+
+## Why "Deep"?
+
+The term "deep" specifically refers to network depth -- the number of layers through which data flows. Deep networks possess a substantial credit assignment path (CAP) depth, which represents the chain of transformations from input to output. While no universal threshold definitively separates shallow from deep learning, most researchers consider networks with more than two layers to qualify as deep. This depth enables superior feature extraction compared to shallow networks with fewer layers.
+
+## Major Architectures
+
+Several distinct neural network architectures have emerged as particularly effective for different tasks. Convolutional neural networks excel at processing visual information and have revolutionized computer vision. Recurrent neural networks, especially those employing long short-term memory (LSTM) cells, effectively handle sequential data like speech and text. Transformers represent a more recent architecture that has become dominant in natural language processing applications. Additionally, generative adversarial networks enable creative applications like image generation, while deep belief networks support unsupervised learning scenarios where labeled training data is scarce.
+
+## Key Applications and Impact
+
+Deep learning has transformed numerous fields with remarkable results. In speech recognition, the technology now powers all major commercial speech recognition systems from companies like Google, Apple, and Amazon. Computer vision applications have achieved superhuman performance in image classification tasks, with deep learning-based image recognition surpassing human accuracy levels by 2014.
+
+The technology has proven invaluable in healthcare, enabling cancer detection, lesion identification, and organ segmentation from medical images. In scientific research, systems like AlphaFold revolutionized protein structure prediction, while GNoME discovered over two million new materials in materials science.
+
+Beyond traditional applications, deep learning has extended into creative domains -- neural style transfer enables artistic transformations of photographs, while language models power machine translation systems supporting over 100 languages. The technology also addresses inverse problems like image denoising, super-resolution enhancement, and financial fraud detection.
+
+## Computational Requirements and Evolution
+
+The practical success of deep learning depends critically on hardware acceleration. Graphics processing units transformed training feasibility, while specialized processors like tensor processing units and neural processing units provide further optimization. The computational demands have grown exponentially; between 2012 and 2017, the hardware requirements for leading deep learning projects increased approximately 300,000-fold.
+
+## Current Significance
+
+Today, deep learning represents a cornerstone technology in artificial intelligence. Its ability to extract meaningful patterns from vast datasets and its superior performance across diverse domains ensure continued expansion into new applications, from climate prediction to drug discovery.
+
