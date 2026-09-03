@@ -1,0 +1,32 @@
+Source: Wikipedia - Natural language processing (https://en.wikipedia.org/wiki/Natural_language_processing), adapted under CC BY-SA 4.0
+
+# Natural Language Processing: Study Notes
+
+## What is Natural Language Processing?
+
+Natural language processing (NLP) represents the computational approach to handling human language. More specifically, it is the processing of natural language information by a computer, as a subfield of computer science closely aligned with artificial intelligence. NLP bridges multiple disciplines, connecting with information retrieval, knowledge representation, computational linguistics, and broader linguistic study. The fundamental goal is enabling computers to understand, interpret, and generate human language in meaningful ways.
+
+## Core Tasks in NLP Systems
+
+NLP systems tackle several major processing challenges. The primary tasks include speech recognition (converting spoken words to text), text classification (categorizing written content), natural language understanding (extracting meaning from language), and natural language generation (producing human-readable output from data). Beyond these foundational tasks, NLP encompasses numerous specialized applications: sentiment analysis determines emotional tone in text, named entity recognition identifies proper nouns and their types, machine translation converts text between languages, and question answering systems provide responses to human queries.
+
+Other important intermediate tasks support these higher-level functions. Tokenization breaks text into individual words or word fragments for analysis. Part-of-speech tagging assigns grammatical roles to each word. Parsing determines sentence structure and relationships between words. Coreference resolution identifies which pronouns and mentions refer to the same entities. These component tasks often work together in processing pipelines to accomplish complex language understanding.
+
+## Historical Evolution: From Rules to Machine Learning
+
+NLP's development reveals a fundamental shift in computational approaches. Early systems relied on symbolic methods -- hand-coded grammatical rules and dictionary lookups. The Georgetown experiment in 1954 demonstrated machine translation capabilities, though progress proved slower than optimistic predictions suggested. Throughout the 1960s-1980s, symbolic NLP produced notable systems like ELIZA and SHRDLU, though they operated within restricted domains.
+
+The late 1980s marked a pivotal transformation. Machine learning algorithms gradually replaced rule-based systems, driven by increased computational power and growing recognition that statistical methods could outperform rigid rule sets. The 1990s witnessed major advances with statistical machine translation, particularly IBM's alignment models leveraging multilingual government corpora.
+
+## Modern Deep Learning Approaches
+
+Since the 2010s, neural networks have dominated NLP research and applications. Deep learning methods achieve superior results through representation learning and word embeddings -- mathematical representations capturing semantic word properties. Key innovations include Word2vec, which efficiently generates word vectors, and transformer architectures enabling sequence-to-sequence processing.
+
+Neural approaches eliminate steps required by earlier statistical methods. For instance, neural machine translation removed the intermediate word alignment phase previously essential for translation systems. These models automatically discover relevant features rather than requiring explicit feature engineering.
+
+## Advantages and Current Applications
+
+Neural and statistical methods offer substantial advantages over symbolic approaches. They handle unfamiliar words and input errors more robustly than rigid rule systems. Larger language models consistently improve accuracy, unlike rule-based systems that grow unwieldy with added complexity. Contemporary NLP successfully powers numerous real-world applications: machine translation services, sentiment analysis for customer feedback, clinical note analysis in healthcare, dialogue management systems, and document processing platforms enabling users without AI expertise to extract information from complex files.
+
+The field continues evolving toward increasingly abstract cognitive aspects of language -- moving from surface-level pattern matching toward genuine semantic understanding across multiple languages and modalities simultaneously.
+
