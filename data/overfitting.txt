@@ -1,0 +1,36 @@
+Source: Wikipedia - Overfitting (https://en.wikipedia.org/wiki/Overfitting), adapted under CC BY-SA 4.0
+
+# Understanding Overfitting in Machine Learning
+
+## Definition and Core Concept
+
+Overfitting occurs when a mathematical model becomes excessively tailored to a specific dataset, resulting in poor performance when applied to new, unseen data. An overfitted model contains more parameters than can be justified by the data. The fundamental problem is that the model inadvertently captures noise and random fluctuations in the training data, treating these irregularities as meaningful patterns rather than extracting genuine underlying structures.
+
+The contrast with underfitting is instructive: while overfitting creates models that are too complex, underfitting produces models that are too simplistic to capture the data's actual relationships. Achieving the right balance between these extremes remains one of machine learning's central challenges.
+
+## Why Overfitting Happens
+
+Overfitting typically arises when several conditions align unfavorably. Most critically, it emerges when a model begins to "memorize" training data rather than "learning" to generalize from a trend. This memorization problem intensifies as model complexity increases relative to dataset size. A function class that is excessively large compared to available observations becomes prone to fitting spurious correlations.
+
+The phenomenon also occurs more frequently in regression analysis and when training continues too long or with insufficient data. Researchers can inadvertently encourage overfitting by using training set performance as their sole evaluation metric, divorcing model selection criteria from real-world predictive requirements. Additionally, when many candidate models are available, the risk of selecting one that merely captures training data noise grows substantially.
+
+## Detecting Overfitting
+
+The most straightforward indicator of overfitting is a significant performance gap between training and validation datasets. A model performing excellently on training data but poorly on new data exhibits classic overfitting symptoms. Additionally, models exhibiting "low bias and high variance" display the statistical hallmarks of overfitting, meaning they fit training examples closely but lack consistency across different datasets.
+
+Another warning sign involves model complexity relative to data quantity. For example, in linear regression with p variables and p data points, the fitted model can perfectly match every observation -- an extreme red flag for overfitting.
+
+## Prevention Techniques
+
+Multiple strategies exist to mitigate overfitting risks. These approaches generally fall into two categories: explicitly penalizing complexity or evaluating generalization ability through independent data.
+
+Common techniques include cross-validation, which tests performance on unseen portions of data; regularization, which adds penalty terms discouraging excessive parameter values; and early stopping, which halts training before the model memorizes noise. Feature selection reduces unnecessary variables, while dropout randomly removes training inputs probabilistically to enhance robustness.
+
+The "Principle of Parsimony" advocates preferring simpler models when complex alternatives offer minimal performance improvements -- essentially following Occam's razor in model selection. Pruning neural networks identifies optimal sparse structures while reducing computational demands.
+
+Ensemble methods combining multiple models can also help, as can increasing training data volume when possible. Ultimately, proper validation procedures using completely separate test datasets remain essential, as models usually need verification on bigger or completely new datasets.
+
+## Conclusion
+
+Preventing overfitting requires vigilance during model development and deployment. Success depends on balancing model complexity against data availability, employing appropriate validation techniques, and maintaining awareness that training performance metrics frequently mislead regarding real-world utility.
+
