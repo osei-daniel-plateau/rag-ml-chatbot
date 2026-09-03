@@ -1,0 +1,38 @@
+Source: Wikipedia - Reinforcement learning (https://en.wikipedia.org/wiki/Reinforcement_learning), adapted under CC BY-SA 4.0
+
+# Reinforcement Learning: A Comprehensive Overview
+
+## Definition and Core Concept
+
+Reinforcement learning (RL) represents one of three fundamental machine learning paradigms, alongside supervised and unsupervised learning. At its heart, RL focuses on how an intelligent agent should take actions in a dynamic environment in order to maximize a reward signal. Unlike supervised learning, which relies on labeled data, RL trains agents through direct interaction with their environment, allowing them to learn through experience and feedback.
+
+## Key Components: Agent, Environment, and Reward
+
+The foundational structure of RL involves three interconnected elements. An agent is the decision-making entity that observes its surroundings and selects actions to take. The environment is the dynamic system with which the agent interacts, responding to actions by transitioning to new states and providing feedback. The reward signal guides the agent's learning, offering immediate numerical feedback after each action. Agents seek to maximize cumulative rewards over time, creating a learning loop where each decision influences future opportunities.
+
+This interaction typically follows what researchers call a Markov decision process, a mathematical framework where future states depend only on current actions, not historical context. The environment tracks states, actions, transition probabilities between states, and the rewards associated with transitions.
+
+## The Exploration-Exploitation Dilemma
+
+A central challenge in RL involves balancing two competing strategies. Exploration means trying new actions to discover better policies and understand the environment more thoroughly. Exploitation means leveraging current knowledge to select the best known actions. Agents must navigate this exploration-exploitation dilemma intelligently -- random action selection performs poorly, but excessive caution prevents discovering superior strategies.
+
+One practical approach involves epsilon-greedy methods, where an agent chooses randomly with small probability epsilon while exploiting its best current knowledge otherwise. This parameter can be adjusted over time, typically favoring exploration early in learning and exploitation later.
+
+## Learning Methods and Approaches
+
+RL employs several sophisticated techniques to identify optimal policies. Value function methods estimate how good specific states or actions are, helping agents make informed decisions. Policy search methods directly optimize the decision-making strategy. Model-based approaches learn environmental dynamics to plan ahead, while model-free methods learn through trial-and-error without explicit models.
+
+Temporal difference learning represents a particularly influential technique, combining ideas from dynamic programming with learning from experience. These methods efficiently update value estimates after each action rather than waiting for complete episodes to finish.
+
+## Real-World Applications
+
+RL's versatility has enabled breakthrough applications across diverse domains. Notably, it powered AlphaGo's historic victory against world champions in the ancient game Go. Beyond games, RL shows promise in robotics, autonomous driving, energy management systems, and photovoltaic generator optimization. In recent years, reinforcement learning has become a significant concept in natural language processing, where it helps systems like ChatGPT align responses with human preferences through techniques like reinforcement learning from human feedback (RLHF).
+
+## Current Challenges
+
+Despite impressive achievements, RL faces practical limitations. Agents often require enormous numbers of interactions to learn effectively -- some systems need thousands of simulated years to reach expert performance. Training can be unstable, with small changes causing dramatic performance shifts. Policies learned in specific environments often struggle to generalize to new scenarios. Additionally, poorly designed reward functions can produce unintended behaviors, and biased training data may perpetuate harmful patterns.
+
+## Conclusion
+
+Reinforcement learning represents a powerful paradigm for creating agents that learn through interaction. By combining intelligent exploration with practical exploitation, sophisticated value estimation techniques, and structured environmental models, RL enables machines to tackle complex sequential decision-making problems. As research advances, addressing stability, sample efficiency, and generalization remains crucial for expanding RL's real-world applications.
+
