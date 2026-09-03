@@ -1,0 +1,40 @@
+Source: Wikipedia - Large language model (https://en.wikipedia.org/wiki/Large_language_model), adapted under CC BY-SA 4.0
+
+# Large Language Models: A Comprehensive Overview
+
+## Definition and Basic Architecture
+
+A large language model (LLM) is a sophisticated neural network trained on enormous amounts of text data to perform natural language processing tasks, particularly text generation. These models form the foundation of modern chatbots and serve as "foundation models" capable of handling diverse language-related applications. LLMs are distinguished by their transformer-based architecture, a design introduced in 2017 that uses an attention mechanism allowing the model to process relationships between all elements in a sequence simultaneously, regardless of their distance from each other.
+
+The most common type, known as Generative Pre-trained Transformers (GPTs), are designed to predict the next word in a sequence. This seemingly simple objective -- trained on vast corpora of text -- enables models to develop remarkable language understanding and generation abilities.
+
+## Training Process and Data Preparation
+
+Training LLMs involves multiple stages. Initially, models undergo pretraining on enormous datasets collected from the internet, sometimes reaching hundreds of billions of tokens. Before training begins, text must be converted into numerical form through tokenization -- a process that breaks text into manageable pieces and assigns them numerical representations.
+
+Data quality significantly impacts model performance. Practitioners typically clean datasets by removing low-quality, duplicated, or toxic content before training. Interestingly, trained LLMs can themselves assist in cleaning datasets for subsequent models, creating an iterative improvement cycle.
+
+After pretraining, models undergo fine-tuning using techniques like Reinforcement Learning from Human Feedback (RLHF), which trains a reward model predicting human preferences and adjusts the LLM accordingly. This stage transforms basic next-token predictors into helpful, instruction-following assistants.
+
+## Key Capabilities
+
+Modern LLMs demonstrate impressive versatility. They can generate coherent text, summarize documents, translate between languages, and analyze content across numerous contexts. Some models now process multiple data types -- text, images, and audio -- making them truly multimodal. LLMs also handle programming languages similarly to natural languages, enabling code generation and completion.
+
+Advanced prompting techniques enhance capabilities further. Chain-of-thought prompting encourages models to verbalize reasoning steps before answering, improving performance on complex problems. Newer "reasoning models" extend this approach, generating extended step-by-step analysis before producing final answers.
+
+Tool integration represents another capability frontier, allowing LLMs to fetch real-time information via APIs or execute code, effectively extending their knowledge beyond training data boundaries.
+
+## Significant Limitations
+
+Despite their power, LLMs face substantial constraints. Hallucinations occur when models generate plausible but factually incorrect statements, sometimes with impressive confidence. These aren't random errors but stem from memorization combined with extrapolation beyond reliable boundaries.
+
+Training data biases persist in model outputs. Gender stereotypes, language-based prejudices favoring English perspectives, and political skew all manifest in LLM responses, reflecting imbalances in training datasets rather than deliberate design choices.
+
+Models struggle with certain tasks humans find trivial. They lack robust planning abilities, real-time learning, and consistent factual accuracy. "Shortcut learning" allows them to exploit statistical patterns in test questions rather than demonstrating genuine understanding.
+
+Energy consumption remains concerning, with training large models requiring enormous computational resources and electricity, often from non-renewable sources. The environmental and economic costs scale dramatically with model size.
+
+## The Understanding Question
+
+A fundamental debate persists: do LLMs truly "understand" language, or merely recombine existing patterns? Researchers remain divided. Proponents point to mathematical reasoning and problem-solving abilities as evidence of understanding, while skeptics characterize LLMs as "stochastic parrots" lacking genuine comprehension. This tension reflects deeper questions about what constitutes understanding itself.
+
