@@ -1,0 +1,28 @@
+Source: Wikipedia - Transformer (deep learning architecture) (https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)), adapted under CC BY-SA 4.0
+
+# The Transformer Architecture: A Comprehensive Overview
+
+## Definition and Core Concept
+
+The transformer represents a revolutionary family of artificial neural network architectures that fundamentally changed how machines process sequential data like text. Rather than relying on recurrent connections, transformers leverage a multi-head attention mechanism to process entire sequences in parallel. Text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. This enables transformers to maintain computational efficiency while capturing complex linguistic relationships.
+
+## The Self-Attention Mechanism
+
+At the heart of every transformer lies the self-attention mechanism, which allows each token to evaluate its relationship with every other token in the input sequence simultaneously. The mechanism operates through three learned weight matrices -- queries, keys, and values -- that transform each token's representation. For each token, attention weights are calculated by taking dot products between query and key vectors, then normalizing these weights through a softmax function. The resulting attention scores determine how much each token influences the representation of other tokens.
+
+The multi-head attention variant further enhances this capability by using multiple sets of query, key, and value matrices in parallel. This allows different attention heads to capture different types of relationships -- some might focus on grammatical dependencies while others track semantic connections. Multiple heads can operate independently and their outputs combine, giving transformers remarkable flexibility in learning diverse linguistic patterns.
+
+## Why Transformers Replaced RNNs
+
+For decades, recurrent neural networks dominated sequence processing tasks. However, RNNs and their improved variant, long short-term memory networks, suffered from a critical limitation: they processed sequences sequentially, one token at a time. This made them inherently difficult to parallelize on modern hardware accelerators like GPUs.
+
+Transformers solve this problem through their architecture's inherent parallelizability. Since self-attention allows all tokens to interact simultaneously rather than sequentially, transformers require less training time than earlier recurrent neural architectures. This computational advantage proved decisive -- transformers could leverage GPU parallelization to achieve superior performance on large datasets. Additionally, the vanishing-gradient problem that plagued RNNs poses less difficulty for transformer architectures, enabling more stable training on longer sequences.
+
+## Role in Modern AI and Applications
+
+The transformer's impact extends far beyond its original purpose. Since the introduction of the architecture in 2017, it has become the foundation for revolutionary language models including the GPT series, BERT, and Claude. Decoder-only and encoder-only variants respectively excel at text generation and representation learning tasks.
+
+Beyond natural language processing, transformers have expanded into vision systems through vision transformers that process images as sequences of patches, speech recognition systems that convert audio spectrograms into token sequences, and multimodal models combining multiple input types. They've also found applications in protein folding prediction, chess evaluation, and reinforcement learning tasks.
+
+The architecture's success stems from its flexibility and effectiveness. By removing recurrence while maintaining powerful attention mechanisms, transformers achieve parallelizability that was an important factor in its widespread use in large neural networks. This combination of efficiency and capability launched the current era of large language models and transformed artificial intelligence research, making transformers the dominant paradigm for processing sequential data across numerous domains.
+
