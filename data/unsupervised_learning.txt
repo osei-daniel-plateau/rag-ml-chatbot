@@ -1,0 +1,32 @@
+Source: Wikipedia - Unsupervised learning (https://en.wikipedia.org/wiki/Unsupervised_learning), adapted under CC BY-SA 4.0
+
+# Unsupervised Learning: A Study Guide
+
+## Definition and Core Concept
+
+Unsupervised learning represents a distinct approach within machine learning where algorithms identify patterns in data without any manual labels or annotations. Unlike supervised learning, where training data includes correct answers that guide the learning process, unsupervised learning operates on raw, unlabeled information. Algorithms in this framework learn patterns exclusively from unlabeled data. This characteristic makes unsupervised learning particularly valuable because datasets can be gathered inexpensively from natural sources, such as web-crawled text collections, rather than requiring expensive manual annotation efforts.
+
+## How Unsupervised Learning Works
+
+The fundamental mechanism involves presenting data to a model and allowing it to discover underlying structure independently. During training, the model attempts to recreate or understand the input data, then uses discrepancies between its output and the actual data to refine itself -- adjusting internal weights and biases based on reconstruction errors. This self-correction process differs markedly from supervised approaches because the model receives no explicit feedback about right or wrong answers.
+
+The field encompasses multiple learning philosophies beyond pure unsupervised methods. Semi-supervised approaches use partially labeled datasets, while self-supervised techniques generate labels from the data itself. These variations exist along a supervision spectrum, accommodating different practical scenarios and data availability constraints.
+
+## Common Techniques: Clustering
+
+Clustering stands as one of the primary unsupervised learning methodologies. This technique groups unlabeled data points based on shared characteristics, allowing algorithms to discover natural categories without predefined labels. Cluster analysis identifies commonalities in the data and reacts based on the presence or absence of such commonalities in each new piece of data.
+
+Popular clustering algorithms include k-means, which partitions data into a specified number of groups; hierarchical clustering, which builds nested group structures; and density-based methods like DBSCAN that identify clusters of varying shapes and sizes. These approaches prove invaluable for exploratory data analysis and anomaly detection, as unusual data points often fail to fit within any identified cluster.
+
+## Dimensionality Reduction
+
+Another essential unsupervised technique involves reducing data complexity while preserving essential information. Principal Component Analysis (PCA) exemplifies this approach, transforming high-dimensional data into a lower-dimensional representation that captures maximum variance. Such reduction techniques serve multiple purposes: they simplify visualization, decrease computational requirements, and eliminate redundant features that provide little analytical value.
+
+Dimensionality reduction also functions as a preprocessing step for other machine learning tasks. Features extracted through unsupervised reduction often feed into supervised models, leveraging the strengths of both approaches.
+
+## Advanced Methods and Applications
+
+Modern unsupervised learning extends beyond traditional clustering and reduction. Neural network-based approaches like autoencoders learn compressed representations of data automatically. Deep learning architectures enable unsupervised pre-training, where models first learn general data patterns, then adapt to specific downstream tasks through fine-tuning.
+
+The flexibility of unsupervised learning allows it to address diverse problems: discovering hidden topics in text collections, detecting network intrusions, recognizing natural groupings in customer behavior, and generating realistic synthetic data. Its ability to extract meaning from vast quantities of unlabeled information makes it increasingly central to modern machine learning applications.
+
